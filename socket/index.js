@@ -6,6 +6,7 @@ var http = require('http').createServer(app);
 var io = require('socket.io')(http);
 var path=require('path');
 // require('./database');
+require('dotenv').config();
 app.set('port', process.env.PORT || 3000);
 app.use(cors());
 app.use(express.urlencoded({extended:false}));
@@ -29,5 +30,5 @@ io.on('connection',(socket)=>{
 })
 
 http.listen(app.get('port'), function(){
-    console.log('listening on *:'+app.get('port'));
+    console.log('listening on http://localhost:'+process.env.PORT);
 });
