@@ -77,9 +77,10 @@ class ConjuntoController extends Controller
 //        return $conjunto;
     }
 
-    public function actualizarconjunto(UpdateConjuntoRequest $request, Conjunto $conjunto)
+    public function actualizarconjunto(UpdateConjuntoRequest $request, $id)
     {
 //        $conjunto->update($request->all());
+        $conjunto=Conjunto::find($id);
         $conjunto->lat=$request->lat;
         $conjunto->lng=$request->lng;
         $conjunto->save();
