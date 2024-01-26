@@ -221,7 +221,7 @@ export default {
       this.conjunto=c
       this.conjunto.lat=e.target._latlng.lat
       this.conjunto.lng=e.target._latlng.lng
-      this.$api.put("conjunto/"+this.conjunto.id,this.conjunto).then(res=>{
+      this.$api.put("actualizarconjunto/"+this.conjunto.id,this.conjunto).then(res=>{
         // console.log(res.data)
         this.misconjuntos()
         socket.emit('chat message','adimer')
@@ -233,7 +233,7 @@ export default {
       this.conjunto.lat=this.lat
       this.conjunto.lng=this.lng
 
-      this.$api.put("conjunto/"+this.conjunto.id,this.conjunto).then(res=>{
+      this.$api.put("actualizarconjunto/"+this.conjunto.id,this.conjunto).then(res=>{
         // console.log(res.data)
         this.misconjuntos()
         socket.emit('chat message','adimer')

@@ -71,6 +71,15 @@ class ConjuntoController extends Controller
     public function update(UpdateConjuntoRequest $request, Conjunto $conjunto)
     {
 //        $conjunto->update($request->all());
+//        $conjunto->lat=$request->lat;
+//        $conjunto->lng=$request->lng;
+//        $conjunto->save();
+//        return $conjunto;
+    }
+
+    public function actualizarconjunto(UpdateConjuntoRequest $request, Conjunto $conjunto)
+    {
+//        $conjunto->update($request->all());
         $conjunto->lat=$request->lat;
         $conjunto->lng=$request->lng;
         $conjunto->save();
