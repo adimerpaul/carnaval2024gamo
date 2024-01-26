@@ -70,8 +70,8 @@ module.exports = configure(function (ctx) {
           .use(ESLintPlugin, [{ extensions: ["js", "vue"] }]);
       },
       env: {
-        API: ctx.dev ? 'http://localhost:8000/api/' : 'https://www.back.carnavaloruro.tk/api/',
-        SOCKET: ctx.dev ? 'http://localhost:3000' : 'https://www.back.carnavaloruro.tk/api/',
+        API: ctx.dev ? 'http://localhost:8000/api/' : 'https://www.bcarnaval.siscenter.org/api/',
+        SOCKET: ctx.dev ? 'http://localhost:3000' : 'https://scarnaval.siscenter.org/',
       }
     },
 
