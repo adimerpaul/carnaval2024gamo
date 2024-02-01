@@ -49,6 +49,9 @@ export default {
     return {
       slide: ref('dos')
     }
+  },
+  mounted() {
+    this.$store.commit("login/nombre",'Videos de danzas');
   }
 }
 </script>

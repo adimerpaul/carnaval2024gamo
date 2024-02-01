@@ -17,7 +17,7 @@
         <!--        <div>Quasar v{{ $q.version }}</div>-->
       </q-toolbar>
       <div class="q-px-lg">
-        <div v-if="$store.getters['login/nombre']==undefined" class="text-h6">Carnaval 2022 <small style="font-size: 10px">(Tiempo real)</small></div>
+        <div v-if="$store.getters['login/nombre']==undefined" class="text-h6">Carnaval 2024 <small style="font-size: 10px">(Tiempo real)</small></div>
         <div v-else class="text-h6">{{$store.getters["login/nombre"]}}</div>
 <!--        <div>{{$store.getters["login/nombre"]}}</div>-->
         <div class="text-subtitle2">{{now}} </div>
