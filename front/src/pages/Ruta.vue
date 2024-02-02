@@ -332,7 +332,7 @@ export default {
       })
     },
     onReady (mapObject) {
-      mapObject.locate();
+      // mapObject.locate();
     },
     onLocationFound(location){
       // console.log(location)

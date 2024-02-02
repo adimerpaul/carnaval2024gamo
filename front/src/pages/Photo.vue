@@ -56,6 +56,9 @@ export default {
       slide: 1,
       fullscreen:false,
     }
+  },
+  mounted() {
+    this.$store.commit("login/nombre",'Fotos del carnaval');
   }
 }
 </script>
