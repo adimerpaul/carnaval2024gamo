@@ -11,7 +11,7 @@ const routes = [
     component: () => import("layouts/MainLayout.vue"),
     children: [
       { path: "", component: Intro},
-      { path: "photo", component: Photo },
+      { path: "photos", component: Photo },
       { path: "rutagamoad", component: Rutaadmin },
       { path: "ruta", component: Ruta },
       { path: "video", component: Video },
