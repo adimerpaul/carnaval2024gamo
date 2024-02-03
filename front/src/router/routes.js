@@ -4,12 +4,14 @@ import Rutaadmin from "pages/Rutaadmin";
 import Rubro from "pages/Rubro";
 import Photo from "pages/Photo";
 import Video from "pages/Video";
+import Intro from "pages/Intro.vue";
 const routes = [
   {
     path: "/",
     component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: "", component: Photo},
+      { path: "", component: Intro},
+      { path: "photo", component: Photo },
       { path: "rutagamoad", component: Rutaadmin },
       { path: "ruta", component: Ruta },
       { path: "video", component: Video },
