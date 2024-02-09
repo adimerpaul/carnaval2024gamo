@@ -8,21 +8,21 @@
       <q-carousel-slide name="uno">
         <q-video
           class="absolute-full"
-          src="https://www.youtube.com/embed/Pjn0w9PhMh0"
+          src="https://www.youtube.com/embed/LdoHKYIfjvo"
         />
       </q-carousel-slide>
 
       <q-carousel-slide name="dos">
         <q-video
           class="absolute-full"
-          src="https://www.youtube.com/embed/mN6GD8X-89A"
+          src="https://www.youtube.com/embed/8ZTjMTWeHBo"
         />
       </q-carousel-slide>
 
       <q-carousel-slide name="tres">
         <q-video
           class="absolute-full"
-          src="https://www.youtube.com/embed/UI-8oFUzDSU"
+          src="https://www.youtube.com/embed/a5WbOJaRQIc"
         />
       </q-carousel-slide>
     </q-carousel>
@@ -32,9 +32,9 @@
         glossy
         v-model="slide"
         :options="[
-          { label: 'danza del toba', value: 'uno' },
-          { label: 'danza de la diablada ', value: 'dos' },
-          { label: 'danza de la caporales', value: 'tres' }
+          { label: 'Uno', value: 'uno' },
+          { label: 'Dos', value: 'dos' },
+          { label: 'Tres', value: 'tres' }
         ]"
       />
     </div>
